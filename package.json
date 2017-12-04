@@ -15,10 +15,12 @@
   },
   "scripts": {
     "build": "gatsby build",
-    "develop": "gatsby develop"
+    "develop": "gatsby develop",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public"
   },
   "devDependencies": {
     "@types/spectacle": "^1.2.0",
+    "gh-pages": "^1.1.0",
     "prettier": "^1.8.2",
     "tslint-config-prettier": "^1.6.0",
     "tslint-plugin-prettier": "^1.3.0"
