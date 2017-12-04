@@ -4,16 +4,16 @@ import {
   Appear,
   BlockQuote,
   Cite,
-  CodePane,
   Code,
+  CodePane,
   Deck,
   Fill,
   Fit,
   Heading,
   Image,
   Layout,
-  ListItem,
   List,
+  ListItem,
   Quote,
   Slide,
   Text
@@ -39,8 +39,8 @@ const theme = createTheme(
   {
     primary: "Helvetica",
     secondary: {
-      name: "Droid Serif",
       googleFont: true,
+      name: "Droid Serif",
       styles: ["400", "700i"]
     }
   }

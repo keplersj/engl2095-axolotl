@@ -19,14 +19,22 @@
     "spectacle": "^4.0.4"
   },
   "scripts": {
+    "precommit": "lint-staged",
+    "lint": "tslint -p .",
     "build": "gatsby build",
     "develop": "gatsby develop",
     "deploy": "gatsby build --prefix-paths && gh-pages -d public"
   },
+  "lint-staged": {
+    "*.{ts,tsx}": ["tslint"]
+  },
   "devDependencies": {
     "@types/spectacle": "^1.2.0",
     "gh-pages": "^1.1.0",
+    "husky": "^0.14.3",
+    "lint-staged": "^6.0.0",
     "prettier": "^1.8.2",
+    "tslint": "^5.8.0",
     "tslint-config-prettier": "^1.6.0",
     "tslint-plugin-prettier": "^1.3.0"
   }
