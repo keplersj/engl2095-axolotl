@@ -17,6 +17,7 @@ import {
   Slide,
   Text
 } from "spectacle";
+import createTheme from "spectacle/lib/themes/default";
 
 // Please note that you can use https://github.com/dotansimha/graphql-code-generator
 // to generate all types from graphQL schema
@@ -31,12 +32,31 @@ interface IndexPageProps {
 }
 
 export default class extends React.Component<IndexPageProps, {}> {
+  private theme = createTheme(
+    {
+      primary: "pink"
+    },
+    {
+      primary: "Helvetica",
+      secondary: {
+        name: "Droid Serif",
+        googleFont: true,
+        styles: ["400", "700i"]
+      }
+    }
+  );
+
   constructor(props: IndexPageProps, context: any) {
     super(props, context);
   }
+
+  private colorFromText(passage: string): string {
+    return "pink";
+  }
+
   public render() {
     return (
-      <Deck progress="bar">
+      <Deck progress="none" theme={this.theme}>
         <Slide>
           <Text>Cortazar's Axolotl</Text>
         </Slide>
@@ -160,7 +180,7 @@ export default class extends React.Component<IndexPageProps, {}> {
           .split("\n")
           .filter(passage => passage !== "")
           .map(passage => (
-            <Slide>
+            <Slide bgColor={this.colorFromText(passage)}>
               <Text>{passage}</Text>
             </Slide>
           ))}
