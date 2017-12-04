@@ -14,6 +14,6 @@ deploy:
   skip_cleanup: true
   github_token: $GITHUB_TOKEN
   local_dir: public
-  fqdn: keplersj.com
+  fqdn: keplersj.com/engl2095-axolotl
   on:
     branch: master
