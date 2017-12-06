@@ -4,9 +4,6 @@
   "version": "1.0.0",
   "author": "Kepler Sticka-Jones <kepler@stickajones.org>",
   "dependencies": {
-    "@types/node": "^8.0.7",
-    "@types/react": "15.0.21",
-    "@types/react-dom": "0.14.23",
     "bayes": "^0.0.7",
     "emotion": "^8.0.12",
     "emotion-server": "^8.0.12",
@@ -28,6 +25,9 @@
     "*.{ts,tsx}": ["tslint"]
   },
   "devDependencies": {
+    "@types/node": "^8.0.7",
+    "@types/react": "15.0.21",
+    "@types/react-dom": "0.14.23",
     "@types/spectacle": "^1.2.0",
     "gh-pages": "^1.1.0",
     "husky": "^0.14.3",
