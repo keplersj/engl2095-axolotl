@@ -5,8 +5,6 @@
   "author": "Kepler Sticka-Jones <kepler@stickajones.org>",
   "dependencies": {
     "bayes": "^0.0.7",
-    "emotion": "^8.0.12",
-    "emotion-server": "^8.0.12",
     "gatsby": "^1.9.119",
     "gatsby-link": "^1.6.28",
     "gatsby-plugin-react-helmet": "^1.0.8",
@@ -22,7 +20,9 @@
     "deploy": "gatsby build --prefix-paths && gh-pages -d public"
   },
   "lint-staged": {
-    "*.{ts,tsx}": ["tslint"]
+    "*.{ts,tsx}": [
+      "tslint"
+    ]
   },
   "devDependencies": {
     "@types/node": "^8.0.7",
