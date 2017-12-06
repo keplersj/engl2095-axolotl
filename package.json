@@ -12,7 +12,6 @@
     "emotion-server": "^8.0.12",
     "gatsby": "^1.9.119",
     "gatsby-link": "^1.6.28",
-    "gatsby-plugin-emotion": "^1.1.9",
     "gatsby-plugin-react-helmet": "^1.0.8",
     "gatsby-plugin-typescript": "^1.4.10",
     "react-async-component": "^1.0.2",
