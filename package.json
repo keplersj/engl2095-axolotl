@@ -10,6 +10,7 @@
     "gatsby-plugin-react-helmet": "^1.0.8",
     "gatsby-plugin-typescript": "^1.4.10",
     "react-async-component": "^1.0.2",
+    "react-github-corner": "^2.0.0",
     "spectacle": "^4.0.4"
   },
   "scripts": {
@@ -20,7 +21,9 @@
     "deploy": "gatsby build --prefix-paths && gh-pages -d public"
   },
   "lint-staged": {
-    "*.{ts,tsx}": ["tslint"]
+    "*.{ts,tsx}": [
+      "tslint"
+    ]
   },
   "devDependencies": {
     "@types/node": "^8.0.7",
