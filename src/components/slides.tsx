@@ -50,7 +50,7 @@ const theme = createTheme(
 export default () => (
   <Deck progress="bar" theme={theme}>
     <Slide>
-      <Text>Cortazar's Axolotl</Text>
+      <Text>{"Cortazar's Axolotl"}</Text>
     </Slide>
     {`
       There was a time when I thought a great deal about the axolotls.
