@@ -20,9 +20,7 @@
     "deploy": "gatsby build --prefix-paths && gh-pages -d public"
   },
   "lint-staged": {
-    "*.{ts,tsx}": [
-      "tslint"
-    ]
+    "*.{ts,tsx}": ["tslint"]
   },
   "devDependencies": {
     "@types/node": "^8.0.7",
