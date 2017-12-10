@@ -2,6 +2,9 @@ import { BayesClassifier } from "natural";
 
 type rgbArray = [number, number, number];
 
+const animalBase: rgbArray = [255, 192, 203];
+const manBase: rgbArray = [173, 216, 230];
+
 function pickHex(color1: rgbArray, color2: rgbArray, weight: number) {
   const w1 = weight;
   const w2 = 1 - w1;
@@ -25,5 +28,16 @@ classifier.addDocument("Save us", "pink");
 
 classifier.train();
 
+type NaturalClassifications = Array<{
+  label: string;
+  value: number;
+}>;
+
 export const colorFromText = (passage: string): string =>
-  classifier.classify(passage);
+  `rgb(${pickHex(
+    manBase,
+    animalBase,
+    ((classifier as any).getClassifications(
+      passage
+    ) as NaturalClassifications)[0].value
+  ).join(",")})`;
