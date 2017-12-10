@@ -4,11 +4,12 @@
   "version": "1.0.0",
   "author": "Kepler Sticka-Jones <kepler@stickajones.org>",
   "dependencies": {
-    "bayes": "^0.0.7",
     "gatsby": "^1.9.119",
     "gatsby-link": "^1.6.28",
     "gatsby-plugin-react-helmet": "^1.0.8",
     "gatsby-plugin-typescript": "^1.4.10",
+    "memory-fs": "^0.4.1",
+    "natural": "^0.5.4",
     "react-async-component": "^1.0.2",
     "react-github-corner": "^2.0.0",
     "spectacle": "^4.0.4"
@@ -26,6 +27,7 @@
     ]
   },
   "devDependencies": {
+    "@types/natural": "^0.2.33",
     "@types/node": "^8.0.7",
     "@types/react": "15.0.21",
     "@types/react-dom": "0.14.23",
